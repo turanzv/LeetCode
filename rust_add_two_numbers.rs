@@ -2,7 +2,9 @@
 /// 
 /// Solution from https://leetcode.com/problems/add-two-numbers/discuss/469977/Simple-Rust-solution-less0ms-2.1MBgreater
 /// 
-/// Some(n) is the way to return the value in a Option enum
+/// 
+/// 1. Some(n) is the way to return the value in a Option<>
+///  enum
 /// 
 /// The Some(n) syntax is necessary because we are wrapping
 /// an item whose type and properties are not known - after
@@ -11,6 +13,18 @@
 /// 
 /// The value of the generic type in scope will be the name
 /// given in the parentheses
+/// 
+/// 
+/// 2. Box<> is a convenient way to work with pointers
+/// 
+/// Why a language would need an artificial construct to
+/// work sith something as fundamental as pointers is
+/// beyond me
+/// 
+/// 
+/// 3. match patterns can include complex logical statements
+/// 
+/// See the second pattern in the code below
 /// 
 
 // Definition for singly-linked list.
